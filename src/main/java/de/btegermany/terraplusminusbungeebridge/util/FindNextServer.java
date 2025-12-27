@@ -30,8 +30,6 @@ public class FindNextServer {
                 return Optional.of(server.getName());
             }
         }
-
-
         return Optional.empty();
     }
 }

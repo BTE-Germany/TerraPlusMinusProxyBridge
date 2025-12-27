@@ -1,7 +1,6 @@
 servers:
   #Example config
-  #-Server: #servername that matches you proxy config
-    #name: ""  #the name that is used in the message "Connecting you to server NAME", leave blank if you would like to disable this message
+  #- name: ""  #servername that matches you proxy config / the name that is used in the message "Connecting you to server NAME"
     #xOffset: 0 #x-Offset from your Terra+- config
     #yOffset: 0 #y-Offset from your Terra+- config
     #zOffset: 0 #z-Offset from your Terra+- config
@@ -14,8 +13,7 @@ servers:
     #minLongitudeMC: 0 #min_longitude from your Terra+- config but CONVERTED into MC-coords (+z)
     #maxLongitudeMC: 0 #max_longitude from your Terra+- config but CONVERTED into MC-coords (-z)
     #newHighLimit: true #true if your server is running mc version 1.18 or higher / true if you can build up to -64
-  -Server1: #please replace this with you actual servers
-    name: ""
+  - name: "" #please replace this with your actual servers
     xOffset: 0
     yOffset: 0
     zOffset: 0
