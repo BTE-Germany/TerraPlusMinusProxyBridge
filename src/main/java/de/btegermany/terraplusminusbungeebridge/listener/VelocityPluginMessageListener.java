@@ -9,13 +9,10 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.ServerConnection;
 import com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier;
 import com.velocitypowered.api.proxy.server.RegisteredServer;
-import de.btegermany.terraplusminusbungeebridge.util.configparser.ServerConfig;
-import org.yaml.snakeyaml.events.Event;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.Optional;
 import java.util.UUID;
 
 public class VelocityPluginMessageListener {
@@ -32,7 +29,6 @@ public class VelocityPluginMessageListener {
         if (!(event.getSource() instanceof ServerConnection)) {
             return;
         }
-        ServerConnection backend = (ServerConnection) event.getSource();
         if (event.getIdentifier() != IDENTIFIER) {
             return;
         }
